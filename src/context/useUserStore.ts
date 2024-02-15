@@ -1,9 +1,12 @@
 import { create } from "zustand";
 import { ConfirmationResult, getAuth, onAuthStateChanged } from "firebase/auth";
-import { createFirebaseApp } from "@/firebase/clientApp";
+import { createFirebaseApp } from "@/settings/firebase/clientApp";
 import { IUser } from "@/types/user/user";
 import { FirebaseApp } from "firebase/app";
-import { sendVerificationCode, verifyCode } from "@/firebase/phoneVerification";
+import {
+  sendVerificationCode,
+  verifyCode,
+} from "@/settings/firebase/phoneVerification";
 
 interface UserState {
   user: IUser | null;
