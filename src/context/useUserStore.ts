@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 import { ConfirmationResult, getAuth, onAuthStateChanged } from "firebase/auth";
 import { createFirebaseApp } from "@/firebase/clientApp";
 import { IUser } from "@/types/user/user";
